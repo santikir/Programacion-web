@@ -1,0 +1,227 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#bodyinicio{
+  height: 100%;
+  background-image: url(/images2/argentinagif.gif);
+  background-size: cover;
+}
+
+.fotosanimadas{
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images2/estadio.webp);
+  background-size: cover;
+}
+
+.contenerfoto{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;  
+  padding: 20%;
+  background-size: cover;
+} 
+
+.foto{
+  position: relative;
+  list-style: none;
+  width: 170px;
+  transition: .3s ease;
+}
+
+.foto::before{
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.fondofoto{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  background-size: 350px;
+  background-position: center;
+  filter: brightness(.9) saturate(1) contrast(1);
+  transform-origin: bottom;
+  transform: scale(1) translateZ(0);
+  transition: .3s ease;
+}
+
+.foto:hover .fondofoto{
+  transform: scale(1.15) translateZ(0);
+  background-size: 260px;
+}
+
+.contenerfoto:not(:hover) .foto:not(:hover){
+  transform: scale(.9);
+  filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+
+}
+
+.contenido{
+  top: 50%;
+  left: 0;
+  padding: 25px;
+  position: absolute;
+}
+
+.categoria{
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.titulofoto{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  text-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+.barra-de-inicio {
+    background-color: #1a1e23;
+    color: #fff; 
+    padding: 0px;
+  }
+  
+.barra-de-inicio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+
+.barra-de-inicio li {
+    display: inline-block;
+  }
+  
+.barra-de-inicio a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+.barra-de-inicio a:hover {
+    background-color: #FFF;
+    color: #1a1e23;
+  }
+
+.barra-de-inicio .imagen img {
+    width: 100%;
+    height: 45px;
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    display: inline;
+  }
+
+.barra-de-inicio .imagen2 img {
+  width: 80%;
+  height: 45px;
+  margin-top: 5%;
+  align-items: center;
+  display: flex;
+  display: inline;
+}
+
+.barra-de-inicio .imagen3 img {
+    width: 100%;
+    height: 45px;
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    display: inline;
+  }
+
+.partidos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1e23;
+}
+
+.partidos a{
+  color: #7CBED8;
+  text-decoration: underline;
+  text-decoration: solid;   
+}
+
+.partidos a:hover{
+  color: #00aa85;
+}
+
+.tabla{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid #1a1e23;
+  background-color: #FFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tabla th{
+  border: solid #1a1e23;
+  border-width: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.tabla td{
+  border: solid #7CBED8 ;
+  text-align: center;
+  padding: 2px; 
+}
+
+#fotoshistoria{
+  display: flex;
+  width: 800px;
+  height: 630px;
+  margin-left: 22%;
+  margin-top: 4%; 
+}
+
+#fotoshistoria img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .5;
+  transition: .5 ease;
+}
+
+#fotoshistoria img:hover{
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+#armani:hover {
+  background-image: url(/images2/armani\ estadistica.webp);
+}
