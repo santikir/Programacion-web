@@ -102,8 +102,7 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
   }
 
 .barra-de-inicio li {
@@ -175,6 +174,7 @@ html{
   height: 45vw;
   margin-left: 22vw;
   margin-top: 4vw; 
+  border: 0.5vw solid #7CBED8;
 }
 
 #fotoshistoria img{
@@ -220,13 +220,76 @@ footer{
 }
 
 .redessociales{
-  margin-top: 1vw;
-  margin-left: 10vw;
+  margin-top: 3vw;
+  margin-left: 18vw;
   list-style-type: None;
   color: #FFF;
   text-align: center;
 }
 
 .imagenesfooter2{
-  width: 1vw;
+  margin-top: 2vw;
+  width: 2vw;
+  justify-content: space-between;
+  margin-left: 2vw;
+}
+
+#frasefinal{
+  align-items: center;
+  padding-left: 40vw;
+  background-color: #1a1e23;
+  color: #fff;  
+  padding-top: 3vw;
+}
+
+#usuariointeractivo{
+  margin-top: 3vw;
+  list-style-type: None;
+  color: #1a1e23;
+  background-color: #FFF;  
+  text-align: center;
+  margin-left: 25vw;
+  box-shadow: 0.5vw 0.5vw 0.2vw #7CBED8;
+  border-radius: 1vw  ;
+}
+
+#usuariointeractivo h4{
+  margin-top: 0.5vw;
+  font-style: oblique;
+}
+
+#formulario{
+  margin-top: 0.5vw;
+  list-style-type: None;
+} 
+
+#formulario button{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding-block: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  cursor: pointer;
+  border: 0.3vw solid #7CBED8;
+  font-size: 1.4vw;
+  border-radius: 1vw;
+  background-color: #FFF;
+}
+
+#formulario button:active{
+  background-color: #7CBED8;
+}
+
+.texto{
+  border: None;
+  position: relative;
+  margin: 1vw;
+  font-size: 1vw;
+  padding: 1vw 0vw 1vw;
+  display: block;
+  border-bottom: 0.1vw solid #7CBED8;
+}
+
+.texto:focus{
+  outline: None ;
 }
