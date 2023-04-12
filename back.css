@@ -156,10 +156,9 @@ html{
 }
 
 .tabla th{
-  border: solid #1a1e23;
-  border-width: 0,8vw;
+  border: solid #1a1e23;  
   text-align: center;
-  padding: 0,5vw;
+  padding: 0.5vw;
 }
 
 .tabla td{
@@ -174,7 +173,7 @@ html{
   height: 45vw;
   margin-left: 22vw;
   margin-top: 4vw; 
-  border: 0.5vw solid #7CBED8;
+  border: 0.5vw solid #1a1e23;
 }
 
 #fotoshistoria img{
@@ -198,7 +197,7 @@ html{
 
 footer{
   background-color: #1a1e23;
-  margin-top: 50vw;
+  margin-top: 53vw;
   display: flex;
 }
 
@@ -206,7 +205,7 @@ footer{
   margin-left: 10vw;
   color: #fff;
   list-style-type: None;
-  margin-bottom: 1vw;
+  font-size: large;
 }
 
 .imagenesfooter{
@@ -214,9 +213,9 @@ footer{
 }
 
 #escudo{
-  width: 3vw; 
-  margin-bottom: 1vw;
-  margin-top: 1vw;
+  width: 6vw; 
+  margin-bottom: 5vw;
+  margin-top: 2vw;
 }
 
 .redessociales{
@@ -229,7 +228,7 @@ footer{
 
 .imagenesfooter2{
   margin-top: 2vw;
-  width: 2vw;
+  width: 5vw;
   justify-content: space-between;
   margin-left: 2vw;
 }
@@ -239,7 +238,7 @@ footer{
   padding-left: 40vw;
   background-color: #1a1e23;
   color: #fff;  
-  padding-top: 3vw;
+  padding-top: 1vw;
 }
 
 #usuariointeractivo{
@@ -248,7 +247,7 @@ footer{
   color: #1a1e23;
   background-color: #FFF;  
   text-align: center;
-  margin-left: 25vw;
+  margin-left: 15vw;
   box-shadow: 0.5vw 0.5vw 0.2vw #7CBED8;
   border-radius: 1vw  ;
 }
@@ -259,7 +258,7 @@ footer{
 }
 
 #formulario{
-  margin-top: 0.5vw;
+  margin-top: 0.5vw;  
   list-style-type: None;
 } 
 
@@ -292,4 +291,10 @@ footer{
 
 .texto:focus{
   outline: None ;
+}
+
+
+header{
+  position: sticky;
+  top: 0vw;
 }
