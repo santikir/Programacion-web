@@ -151,20 +151,26 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #FFF;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1e23;
+
 }
 
 .tabla th{
-  border: solid #1a1e23;  
+  border: solid #fff;  
   text-align: center;
-  padding: 0.5vw;
+  background-color: #7CBED8;
 }
 
 .tabla td{
   border: solid #7CBED8 ;
   text-align: center;
-  padding: 1vw; 
+  padding: 0.5vw; 
+  background-color: #1a1e23;
+  color: #FFF;
+
 }
 
 #fotoshistoria{
@@ -191,9 +197,6 @@ html{
   filter: contrast(120%);
 }
 
-#armani:hover {
-  background-image: url(/images2/armani\ estadistica.webp);
-}
 
 footer{
   background-color: #1a1e23;
@@ -298,3 +301,59 @@ header{
   position: sticky;
   top: 0vw;
 }
+
+#grupos{
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 4, 2vw;
+  grid-template-rows: 2, 3vw;
+  grid-gap: 2vw 1vw;
+}
+
+.menu-barra{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+.barra-de-inicio a{
+  font-size: 0.9ch;
+  margin: 0;
+}
+
+.barra-de-inicio ul li{
+  display: block;
+  float: None;
+}
+
+footer{
+  display: none;
+} 
+#frasefinal{
+  visibility: hidden;
+}
+#bodyinicio{
+  background-image: url(/images2/messicelular.jpg_large);
+}
+.tabla th td{
+  padding: 0.5vw;
+}
+.imagenhead{
+  visibility: hidden;
+}
+
+.fotosanimadas{
+  align-items: none
+}
+.contenerfoto{
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+
+}
+.titulofoto{
+  font-size: 0.5ch;
+}
+}
+
