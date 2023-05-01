@@ -303,18 +303,105 @@ header{
 }
 
 #grupos{
-  background-size: cover;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 4, 2vw;
-  grid-template-rows: 2, 3vw;
-  grid-gap: 2vw 1vw;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+  grid-gap: 2vw 3vw;
+  background-color: #c70e44;
+  background-size: cover;
+}
+
+#imagencatar{
+  grid-column: 1;
+  grid-row: 1;  
+  object-fit: cover;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+#grupos1{
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  box-shadow: 2px #9d163c;
+}
+
+#grupos2{
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos3{
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos4{
+  grid-column: 4;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos5{
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos6{
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos7{
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+#grupos8{
+  grid-column: 4;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+}
+
+.titulogrupos{
+  font-size: 1vw;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #8c1338
 }
 
 .menu-barra{
   display: none;
 }
 
+#texto78{
+  visibility: hidden;
+}
 
 @media screen and (max-width: 600px) {
 .barra-de-inicio a{
@@ -336,6 +423,11 @@ footer{
 #bodyinicio{
   background-image: url(/images2/messicelular.jpg_large);
 }
+
+.tabla{
+  
+}
+
 .tabla th td{
   padding: 0.5vw;
 }
@@ -346,14 +438,37 @@ footer{
 .fotosanimadas{
   align-items: none
 }
-.contenerfoto{
-  display: flex;
-  flex-direction: column;
-  justify-items: left;
 
-}
 .titulofoto{
   font-size: 0.5ch;
 }
+
+.contenerfoto{
+  display: flex;
+  width: 100vw;
+  position: relative;
+  overflow: scroll;
 }
 
+.contenerfoto .foto{
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+}
+.contenerfoto .fondofoto{
+  position: sticky;  
+  aspect-ratio: 8/16;
+  width: 200px;
+  background-size: cover;
+}
+
+.contenerfoto:not(:hover) .foto:not(:hover){
+  transform: none;
+  filter: none;
+}
+
+#fotoshistoria #78:hover #texto78{
+  visibility: visible;
+} 
+
+}
