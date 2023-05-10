@@ -128,6 +128,14 @@ html{
     margin-top: 0.3vw;
   }
 
+.navbarToggleExternalContent{
+  display: none;
+}
+
+#navbarnavbar-darkbg-dark{
+  display: none;
+}
+
 .partidos{
   display: flex;
   flex-direction: column;
@@ -155,7 +163,6 @@ html{
   margin: 0;
   padding: 0;
   background-color: #1a1e23;
-
 }
 
 .tabla th{
@@ -170,7 +177,6 @@ html{
   padding: 0.5vw; 
   background-color: #1a1e23;
   color: #FFF;
-
 }
 
 #fotoshistoria{
@@ -191,7 +197,6 @@ html{
 }
 
 #fotoshistoria img:hover{
-  cursor: crosshair;
   width: 30vw;
   opacity: 1;
   filter: contrast(120%);
@@ -250,7 +255,7 @@ footer{
   color: #1a1e23;
   background-color: #FFF;  
   text-align: center;
-  margin-left: 15vw;
+  margin-left: 5vw;
   box-shadow: 0.5vw 0.5vw 0.2vw #7CBED8;
   border-radius: 1vw  ;
 }
@@ -302,13 +307,17 @@ header{
   top: 0vw;
 }
 
+#bodyfixture{
+  background-color:#ce0d45 ;
+}
+
 #grupos{
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 4;
   grid-template-rows: 3;
   grid-gap: 2vw 3vw;
-  background-color: #c70e44;
+  background-color: #ce0d45;
   background-size: cover;
 }
 
@@ -316,9 +325,29 @@ header{
   grid-column: 1;
   grid-row: 1;  
   object-fit: cover;
-  width: 20%;
-  height: 20%;
+  height: 10%;
+  width: 50%;
   position: relative;
+  padding-left: 10vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+
+.imagencatar2{
+  width: 100%;
+}
+
+#textogrupos{
+  grid-column: 4;
+  grid-row: 1;
+  width: 100%;
+  color: #e8f3e6;
+  font-size: 2vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
+  padding-right: 10vw;
+  background-size: cover;
 }
 
 #grupos1{
@@ -329,6 +358,9 @@ header{
   background-color: #efeee5;
   border-radius: 1vw;
   box-shadow: 2px #9d163c;
+  padding: 1vw;
+  margin-left: -15vw;
+  padding-right: 2vw;
 }
 
 #grupos2{
@@ -338,7 +370,11 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -40vw;
+  padding-right: 3vw;
 }
+
 #grupos3{
   grid-column: 3;
   grid-row: 2;
@@ -346,7 +382,10 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -20vw;
 }
+
 #grupos4{
   grid-column: 4;
   grid-row: 2;
@@ -354,7 +393,12 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -15vw;
+  padding-right: 3vw;
 }
+
+
 #grupos5{
   grid-column: 1;
   grid-row: 3;
@@ -362,6 +406,9 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -15vw;
+  padding-right: 3vw;
 }
 #grupos6{
   grid-column: 2;
@@ -370,6 +417,9 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -40vw;
+  padding-right: 3vw;
 }
 #grupos7{
   grid-column: 3;
@@ -378,6 +428,9 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -20vw;
+  padding-right: 3vw;
 }
 #grupos8{
   grid-column: 4;
@@ -386,6 +439,9 @@ header{
   align-self: center;
   background-color: #efeee5;
   border-radius: 1vw;
+  padding: 1vw;
+  margin-left: -15vw;
+  padding-right: 1.5vw;
 }
 
 .titulogrupos{
@@ -403,15 +459,26 @@ header{
   visibility: hidden;
 }
 
-@media screen and (max-width: 600px) {
-.barra-de-inicio a{
-  font-size: 0.9ch;
-  margin: 0;
+#frasestadistica{
+  display: none;
 }
 
-.barra-de-inicio ul li{
-  display: block;
-  float: None;
+.brs{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+#navbarnavbar-darkbg-dark{
+  display: inline;
+}
+
+.navbarToggleExternalContent{
+  display: inline;
+}
+
+.barra-de-inicio{
+  display: none;
 }
 
 footer{
@@ -424,13 +491,6 @@ footer{
   background-image: url(/images2/messicelular.jpg_large);
 }
 
-.tabla{
-  
-}
-
-.tabla th td{
-  padding: 0.5vw;
-}
 .imagenhead{
   visibility: hidden;
 }
@@ -448,14 +508,18 @@ footer{
   width: 100vw;
   position: relative;
   overflow: scroll;
+  flex-direction: column;
+  background-image: none;
+  background-color: #1a1e23;
 }
 
 .contenerfoto .foto{
   width: 100%;
   border-radius: 5px;
   display: flex;
-}
-.contenerfoto .fondofoto{
+  height: 90vw;
+} 
+.contenerfoto .fondofoto{ 
   position: sticky;  
   aspect-ratio: 8/16;
   width: 200px;
@@ -467,8 +531,140 @@ footer{
   filter: none;
 }
 
-#fotoshistoria #78:hover #texto78{
-  visibility: visible;
-} 
+
+#grupos{
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 9;
+  grid-gap: 2vw 3vw;
+  background-color: #ce0d45;
+  background-size: cover;
+}
+
+.titulogrupos{
+  font-size: 8vw;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #8c1338
+}
+
+#grupos1{
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  box-shadow: 2px #9d163c;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+
+#grupos2{
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+
+#grupos3{
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+
+#grupos4{
+  grid-column: 1;
+  grid-row: 5;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+
+
+#grupos5{
+  grid-column: 1;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+#grupos6{
+  grid-column: 1;
+  grid-row: 7;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+#grupos7{
+  grid-column: 1;
+  grid-row: 8;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+#grupos8{
+  grid-column: 1;
+  grid-row: 9;
+  justify-self: center;
+  align-self: center;
+  background-color: #efeee5;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+
+.tabla{
+  display: none;
+
+}
+.barra-de-inicio #estadisticas{
+  display: none;
+}
+
+#frasestadistica{
+  display: inline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 8vw;
+  color: white;
+}
+
+#backgroundestadistica{
+  background-color: #1a1e23
+}
+
+.brs{display: inline;}
+
+
 
 }
