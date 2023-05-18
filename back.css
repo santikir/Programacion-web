@@ -128,14 +128,6 @@ html{
     margin-top: 0.3vw;
   }
 
-.navbarToggleExternalContent{
-  display: none;
-}
-
-#navbarnavbar-darkbg-dark{
-  display: none;
-}
-
 .partidos{
   display: flex;
   flex-direction: column;
@@ -469,16 +461,17 @@ header{
 
 @media screen and (max-width: 600px) {
 
-#navbarnavbar-darkbg-dark{
-  display: inline;
-}
-
-.navbarToggleExternalContent{
-  display: inline;
-}
-
 .barra-de-inicio{
   display: none;
+}
+.barra-de-inicio a{
+  font-size: 0.9ch;
+  margin: 0;
+}
+
+.barra-de-inicio ul li{
+  display: block;
+  float: None;
 }
 
 footer{
@@ -664,7 +657,6 @@ footer{
 }
 
 .brs{display: inline;}
-
 
 
 }
