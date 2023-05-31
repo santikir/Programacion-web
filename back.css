@@ -456,11 +456,6 @@ header{
   display: none;
 }
 
-.brs{
-  display: none;
-}
-
-
 nav ul{
   list-style: none;
   background-color: #1a1e23;
@@ -512,6 +507,15 @@ nav div{
 
 nav{
   display: none;
+}
+
+#imagenfixture img{
+  width: 80%;
+}
+
+#imagenfixture{
+  padding-top: 200px;
+  padding-left: 215px;
 }
 
 @media screen and (max-width: 600px) {
@@ -718,7 +722,7 @@ nav ul li{
 
 nav ul{
   flex-direction: column;
-  top: 40px;
+  top: 50px;
   right: 0px;
 
 }
@@ -755,6 +759,16 @@ nav ul li{
 body{
   background-color: #1a1e23;
 }
+
+#imagenfixture img{
+  width: 100%;
+}
+
+#imagenfixture{
+  padding-top: 50px;
+  padding-left: 0px;
+}
+
 
 } 
 
