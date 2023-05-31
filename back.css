@@ -129,56 +129,6 @@ html{
     margin-top: 0.3vw;
   }
 
-
-nav ul{
-  list-style: none;
-  background-color: #1a1e23;
-  color: #fff; 
-}
-
-nav ul li{
-  display: inline-block;
-}
-
-#boton-menu1{
-  background-color: #1a1e23;
-  color: #fff;
-}
-
-#boton-menu{
-  width: 20px;
-  margin: 2px;
-}
-
-nav a{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal;
-  color: #FFF;
-}
-
-nav a{
-  color: #FFF;
-  text-decoration: none;
-  padding: 1vw;
-}
-
-nav ul a:hover{
-  background-color: #FFF;
-  color: #1a1e23;
-}
-
-nav ul{
-  display: none;
-}
-
-nav i{
-  display: none;
-}
-
-nav div{
-  display: none ;
-}
-
 .partidos{
   display: flex;
   flex-direction: column;
@@ -510,6 +460,56 @@ header{
   display: none;
 }
 
+
+nav ul{
+  list-style: none;
+  background-color: #1a1e23;
+  color: #fff; 
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+#boton-menu1{
+  background-color: #1a1e23;
+  color: #fff;
+}
+
+#boton-menu{
+  width: 20px;
+  margin: 2px;
+}
+
+nav a{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  color: #FFF;
+}
+
+nav a{
+  color: #FFF;
+  text-decoration: none;
+  padding: 1vw;
+}
+
+nav ul a:hover{
+  background-color: #FFF;
+  color: #1a1e23;
+}
+
+nav ul{
+  display: none;
+}
+
+nav i{
+  display: none;
+}
+
+nav div{
+  display: none ;
+}
+
 nav{
   display: none;
 }
@@ -519,8 +519,6 @@ nav{
 .barra-de-inicio{
   display: none;
 }
-
-
 footer{  
   display: none;
 } 
@@ -546,7 +544,6 @@ footer{
 .contenerfoto{
   display: flex;
   width: 100vw;
-  position: relative;
   overflow: scroll;
   flex-direction: column;
   background-image: none;
@@ -560,8 +557,7 @@ footer{
   height: 90vw;
 } 
 .contenerfoto .fondofoto{ 
-  position: sticky;  
-  aspect-ratio: 8/16;
+  position: sticky; 
   width: 200px;
   background-size: cover;
 }
@@ -717,12 +713,13 @@ nav ul li{
   width: 100%;
   padding: 16px;
   text-align: left;
+  text-decoration: wavy;
 }
 
 nav ul{
   flex-direction: column;
   top: 40px;
-  margin-left: 220px;
+  right: 0px;
 
 }
 
@@ -733,8 +730,11 @@ nav ul{
 
 nav ul li{
   display: block;
-  margin: 20px;
+  text-align: right;
+  text-decoration: double;
+  text-decoration: underline;
 }
+
 
 #boton-menu1{
   text-align: right;
@@ -750,6 +750,10 @@ nav ul li{
 
 .show{
   display: block;
+}
+
+body{
+  background-color: #1a1e23;
 }
 
 } 
