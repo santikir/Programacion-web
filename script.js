@@ -29,6 +29,7 @@
 //alert //-->alerta, muestra al usuario, da respuesta
 //parseInt //-->pasa a int
 
+
 let menuboton1 = document.getElementById("boton-menu1");
 let menuboton2 = document.getElementById("menu-celu")
 
@@ -36,4 +37,13 @@ menuboton1.addEventListener("click", toggleText);
 
 function toggleText(){
     menuboton2.classList.toggle("show")
+}
+
+let cartelbienvendia = document.getElementById("cartel-bienvenida")
+let botonsuscripcion = document.getElementById("boton-suscripcion")
+
+botonsuscripcion.addEventListener("click", mostrar)
+
+function mostrar(){
+    cartelbienvendia.classList.toggle("show")
 }

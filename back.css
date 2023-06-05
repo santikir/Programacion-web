@@ -518,6 +518,10 @@ nav{
   padding-left: 215px;
 }
 
+#cartel-bienvenida{
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
 
 .barra-de-inicio{
@@ -722,10 +726,12 @@ nav ul li{
 
 nav ul{
   flex-direction: column;
-  top: 50px;
+  top: 40px;
   right: 0px;
 
 }
+
+
 
 nav ul{
   position: fixed;
@@ -742,7 +748,7 @@ nav ul li{
 
 #boton-menu1{
   text-align: right;
-  padding: 5px; 
+  padding: 2px; 
   padding-left: 10px;
   font-size: large;
 }
@@ -770,6 +776,7 @@ body{
 }
 
 
-} 
+}
+
 
 
