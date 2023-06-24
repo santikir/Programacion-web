@@ -38,12 +38,7 @@
 //function guardar(){}
 //function cargardatos(){}
 
-let nombre_usuario = ""
-nombre_usuario = document.getElementsByClassName("texto")
-localStorage.setItem("nombreusuario",nombre_usuario)
-localStorage.getItem("nombreusuario")
 
-JSON.parse(nombre_usuario)
 
 let menuboton1 = document.getElementById("boton-menu1");
 let menuboton2 = document.getElementById("menu-celu")
@@ -53,4 +48,12 @@ menuboton1.addEventListener("click", toggleText);
 function toggleText(){
     menuboton2.classList.toggle("show")
 }
+
+let nombre_usuario = ""
+nombre_usuario = document.getElementsByClassName("texto")
+localStorage.setItem("nombreusuario",nombre_usuario)
+localStorage.getItem("nombreusuario")
+
+JSON.parse(nombre_usuario)
+
 
